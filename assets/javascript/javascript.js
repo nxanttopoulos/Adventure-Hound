@@ -9,13 +9,12 @@ var config = {
 firebase.initializeApp(config);
 var database = firebase.database(); 
 $(document).ready(function() { 
-  var dbRef = new Firebase ('https://adventure-hound.firebaseio.com/');
-  dbRef.on("value", function(snapshot) {
+    database.ref().on('value', function(snapshot) {
     $(".trow").remove();
     console.log(snapshot.val());
     snapshot.forEach(function (child) { 
       var tableRow = $("<tr class='trow'></tr>");
-      var key = child.key();
+      // var key = child.key();
       var childData = child.val();
       // console.log(key);
       console.log(childData);
