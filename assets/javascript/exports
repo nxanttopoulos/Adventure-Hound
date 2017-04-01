@@ -1,0 +1,9 @@
+exports.essentials = {
+	drink: "water",
+	eat: "snickers",
+	fun: "phone",
+	friend: "facebook"
+};
+exports.nicetohave = {
+	tools = ["can opener", "flashlight", "matchstrik"]
+}
