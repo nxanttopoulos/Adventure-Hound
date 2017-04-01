@@ -25,6 +25,7 @@ $(document).ready(function() {
     });
   });
 });
+var query = "";
 $(".btn").on("click", function(event) {
   event.preventDefault();
   var query = $("#placeName").val().trim();
@@ -36,3 +37,14 @@ $(".btn").on("click", function(event) {
     query:query,
   });
 });
+
+// var queryURL = "http://www.omdbapi.com/?s=" + query + "&y=&plot=short&r=json";
+// $.ajax({
+//   url: queryURL,
+//   method: "GET"
+// }).done(function(response) {
+//   console.log(response);
+//   for (var i=0; i < response.Search.length; i++) {
+//     console.log(response.Search[i]);
+//   }
+// });
