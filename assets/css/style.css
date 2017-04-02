@@ -1,10 +1,30 @@
-body  {
-  background-image: url("https://giphy.com/gifs/places-rhYbume18uUBW");
-   background-size: 100%;
-  background-repeat: no-repeat;
-}
-footer {
-        padding-top: 25%;
+html, body {
+  	background-image: url("https://media2.giphy.com/media/3o6EhIe2F2yPPnqFyw/200.webp#56");
+  	background-size: 100%;
+  	background-repeat: no-repeat;
+  	height: 100%;
+} #wrap {
+	min-height:100%;
+} #main {
+	overflow:auto;
+	padding-bottom:150px;
+} .footer {
+    position: relative;
+    margin-top: -100px;
+    height: 100px;
+	clear: both;
+	padding-top: 20px;
+	background-color: #efefef;
+	text-align:center;
 
+} .jumbotron {
+    /*background-image: url('https://media.giphy.com/media/rhYbume18uUBW/giphy.gif (254KB) ');*/
+    background-size: 40%;
+    background-repeat: no-repeat;
+} .table {
+	color: white;
+} .popularSearches {
+	color:white;
+} .textFooter {
+	line-height:70px;
 }
-
