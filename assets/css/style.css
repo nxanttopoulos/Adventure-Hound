@@ -11,7 +11,7 @@ html, body {
 } .footer {
     position: fixed;
   	/*margin-top: -75px;*/
-    height: 75px;
+    height:50px;
     width:100%;
 	/*clear: both;*/
 	/*padding-top: 20px;*/
@@ -30,7 +30,7 @@ html, body {
 	color:black;
 	font-weight:bold;
 } .textFooter {
-	line-height:90px;
+	line-height:55px;
 	color:white;
 	font-weight:bold;
 }
