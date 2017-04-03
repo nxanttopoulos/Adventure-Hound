@@ -45,6 +45,8 @@ $(document).ready(function() {
     })
     .done(function(response) {
       // console.log(response);
+      var kelvin = response.main.temp;
+      var Fahrenheit = (kelvin-273.15) * 1.80 + 32;
       var city = $("<div class='city'></div>");
       var wind = $("<div class='wind'></div>");
       var humidity = $("<div class='humidity'></div>");
@@ -56,7 +58,7 @@ $(document).ready(function() {
       $(".city").html("<h2>" + response.name + " - Weather Details</h2>");
       $(".wind").html("Wind Speed: " + response.wind.speed);
       $(".humidity").html("Humidity: " + response.main.humidity);
-      $(".temp").html("Temperature (F) " + response.main.temp);
+      $(".temp").html("Temperature (F) " + Fahrenheit);
       // console.log("Wind Speed: " + response.wind.speed);
       // console.log("Humidity: " + response.main.humidity);
       // console.log("Temperature (F): " + response.main.temp);
