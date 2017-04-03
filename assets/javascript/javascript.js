@@ -27,8 +27,6 @@ $(document).ready(function() {
   $(".pushBtn").on("click", function(event) {
     event.preventDefault();
     var query = $("#placeName").val().trim();
-    console.log(query);
-    console.log("hello");
     database.ref().push({
       query:query,
     });
@@ -38,7 +36,6 @@ $(document).ready(function() {
     event.preventDefault();
     var APIKey = "166a433c57516f51dfab1f7edaed8413";
     var query = $("#placeName").val().trim();
-    query = "England,London";
     $("#display_2").empty();
     var queryURL = "http://api.openweathermap.org/data/2.5/weather?" +
           "q="+ query +"&appid=" + APIKey;
@@ -47,7 +44,7 @@ $(document).ready(function() {
       method: "GET"
     })
     .done(function(response) {
-      console.log(response);
+      // console.log(response);
       var city = $("<div class='city'></div>");
       var wind = $("<div class='wind'></div>");
       var humidity = $("<div class='humidity'></div>");
@@ -56,13 +53,13 @@ $(document).ready(function() {
       $("#display_2").append(wind);
       $("#display_2").append(humidity);
       $("#display_2").append(temp);
-      $(".city").html("<h2>" + response.name + " Weather Details</h2>");
+      $(".city").html("<h2>" + response.name + " - Weather Details</h2>");
       $(".wind").html("Wind Speed: " + response.wind.speed);
       $(".humidity").html("Humidity: " + response.main.humidity);
       $(".temp").html("Temperature (F) " + response.main.temp);
-      console.log("Wind Speed: " + response.wind.speed);
-      console.log("Humidity: " + response.main.humidity);
-      console.log("Temperature (F): " + response.main.temp);
+      // console.log("Wind Speed: " + response.wind.speed);
+      // console.log("Humidity: " + response.main.humidity);
+      // console.log("Temperature (F): " + response.main.temp);
     });
   });
 });
