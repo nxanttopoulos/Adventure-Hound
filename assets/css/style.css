@@ -4,10 +4,11 @@ html, body {
   	background-repeat: no-repeat;
   	max-height: 100%;
   	max-width: 100%;
+  	font-weight:bold;
 } #wrap {
 	min-height:100%;
-} #main {
-
+} h2 {
+	font-weight:bold;
 } .footer {
     position: fixed;
   	/*margin-top: -75px;*/

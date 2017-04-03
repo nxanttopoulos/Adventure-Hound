@@ -37,7 +37,7 @@ $(document).ready(function() {
     var APIKey = "166a433c57516f51dfab1f7edaed8413";
     var query = $("#placeName").val().trim();
     $("#display_2").empty();
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?" +
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
           "q="+ query +"&appid=" + APIKey;
     $.ajax({
       url: queryURL,
