@@ -9,6 +9,7 @@ html, body {
 	min-height:100%;
 } h2 {
 	font-weight:bold;
+	text-decoration:underline;
 } .footer {
     position: fixed;
   	/*margin-top: -75px;*/
@@ -20,18 +21,36 @@ html, body {
 	left: 0px;
 	background-color: black;
 	text-align:center;
-} .jumbotron {
+} /*.jumbotron {
     background-image: url('https://media.giphy.com/media/rhYbume18uUBW/giphy.gif');
     background-size: 100%;
     background-repeat: no-repeat;
-} .table {
+}*/ .table {
 	color: black;
 	font-weight:bold;
 } .popularSearches {
 	color:black;
 	font-weight:bold;
-} .textFooter {
+} .col-sm-4 {
+	text-align:center;
+	margin:auto;
+}.textFooter {
 	line-height:55px;
 	color:white;
 	font-weight:bold;
+} #rateB1, #rateB2 {
+	vertical-align:center;
+	vertical-align:top;
+	float: left;
+	table-layout:fixed;
+	/*width:100%;*/
+} #queries, #rateB1, #rateB2, .city, .wind, .temp, .humidity {
+	font-size:16px;
+} #display_2 {
+
+} td {
+	vertical-align:top;
+    word-wrap:break-word;
+} .city, .wind, .temp, .humidity {
+	padding-bottom: 10px;
 }
