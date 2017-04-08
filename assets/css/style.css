@@ -5,9 +5,10 @@ html, body {
   	max-height: 100%;
   	max-width: 100%;
   	font-weight:bold;
+  	color:black;
 } #wrap {
 	min-height:100%;
-} h2 {
+} h2, h3 {
 	font-weight:bold;
 	text-decoration:underline;
 } .footer {
@@ -28,9 +29,8 @@ html, body {
 }*/ .table {
 	color: black;
 	font-weight:bold;
-} .popularSearches {
-	color:black;
-	font-weight:bold;
+} .popularSearches, #display_2, #display_1 {
+	text-shadow:75px -50px 3px rgba(0, 0, 0, 0.25);
 } .col-sm-4 {
 	text-align:center;
 	margin:auto;
@@ -38,19 +38,21 @@ html, body {
 	line-height:55px;
 	color:white;
 	font-weight:bold;
-} #rateB1, #rateB2 {
+} .displayRates {
 	vertical-align:center;
 	vertical-align:top;
 	float: left;
-	table-layout:fixed;
-	/*width:100%;*/
-} #queries, #rateB1, #rateB2, .city, .wind, .temp, .humidity {
+	/*table-layout:fixed;*/
+	margin-right:25px;
+	text-shadow:100px -60px 3px rgba(0, 0, 0, 0.35);
 	font-size:16px;
-} #display_2 {
-
+	/*width:100%;*/
+} #queries, .wind, .temp, .humidity, .cloud, .forecast, .rain {
+	font-size:20px;
 } td {
 	vertical-align:top;
     word-wrap:break-word;
-} .city, .wind, .temp, .humidity {
-	padding-bottom: 10px;
+} .city, .wind, .temp, .humidity, .forecast, .cloud, .rain {
+	text-shadow:100px -65px 3px rgba(0, 0, 0, 0.35);
+	padding-bottom: 20px;
 }
