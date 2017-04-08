@@ -67,12 +67,12 @@ $(document).ready(function() {
       var conditions = response.weather;
       var forecast = conditions[0];
       var Fahrenheit = parseInt((kelvin-273.15) * 1.80 + 32);
-      var city = $("<div class='city'></div>");
-      var wind = $("<div class='wind'></div>");
-      var humidity = $("<div class='humidity'></div>");
-      var temp = $("<div class='temp'></div>");
-      var cloud = $("<div class='cloud'></div>");
-      var rain = $("<div class='rain'></div>");
+      var city = $("<div class='city weather'></div>");
+      var wind = $("<div class='wind weather'></div>");
+      var humidity = $("<div class='humidity weather'></div>");
+      var temp = $("<div class='temp weather'></div>");
+      var cloud = $("<div class='cloud weather'></div>");
+      var rain = $("<div class='rain weather'></div>");
       $("#display_2").append(city);
       $("#display_2").append(temp);
       $("#display_2").append(wind);
@@ -95,11 +95,11 @@ $(document).ready(function() {
     // .done(function(response) {
     //   // var kelvin = response.main.temp;
     //   // var Fahrenheit = (kelvin-273.15) * 1.80 + 32;
-    //   var forecast = $("<div class='forecast'></div>");
-    //   var forecastM= $("<div class='mon'></div>");
-    //   var forecastT = $("<div class='tues'></div>");
-    //   var forecastW = $("<div class='wed'></div>");
-    //   var forecastH = $("<div class='thurs'></div>");
+    //   var forecast = $("<div class='forecast weather'></div>");
+    //   var forecastM= $("<div class='mon weather'></div>");
+    //   var forecastT = $("<div class='tues weather'></div>");
+    //   var forecastW = $("<div class='wed weather'></div>");
+    //   var forecastH = $("<div class='thurs weather'></div>");
       // $("#display_2").append(forecast);
       // $("#display_2").append(forecastT);
       // $("#display_2").append(forecastW);

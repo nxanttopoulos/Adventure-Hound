@@ -47,12 +47,12 @@ html, body {
 	text-shadow:100px -60px 3px rgba(0, 0, 0, 0.35);
 	font-size:16px;
 	/*width:100%;*/
-} #queries, .wind, .temp, .humidity, .cloud, .forecast, .rain {
+} #queries, .weather {
 	font-size:20px;
 } td {
 	vertical-align:top;
     word-wrap:break-word;
-} .city, .wind, .temp, .humidity, .forecast, .cloud, .rain {
+} .weather {
 	text-shadow:100px -65px 3px rgba(0, 0, 0, 0.35);
 	padding-bottom: 20px;
 }
