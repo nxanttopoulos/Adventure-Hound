@@ -119,6 +119,7 @@ $(document).ready(function() {
     $("#display_2").append(ratesDivHead);
     $(".rateH").html("<h2>Exchange Rates:<form><input type='text' class ='form control' id='base-query' placeholder='USD'></form><button type='button' id='changeRate'>Submit</button></h2>");
     $("#changeRate").on("click", function(event) {
+      $(".displayRates").remove();
       var baseQuery = $("#base-query").val().trim();
       if (baseQuery === "") {
         var base = 'USD';
