@@ -1,67 +1,64 @@
 <!DOCTYPE html>
 <head>
-<meta charset="UTF-8">
-<title>Adventure Hound</title>
-   <!-- Bootsrap/JQuery Refences -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
-   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>    
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
-   <!-- Firebase Reference -->    
-   <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>      
-   <!-- Moment Reference -->  
-   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>   
-    <!-- CSS/JS Reference -->
-   <script src="assets/javascript/javascript.js"></script>
-   <script src="assets/css/style.css"></script>
+  <meta charset="UTF-8">
+  <title>Adventure Hound</title>
+  <!-- Bootsrap/JQuery Refences -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>    
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Firebase Reference -->    
+  <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>     
+  <!-- Moment Reference -->  
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>   
+  <!-- CSS/JS Reference -->
+  <script src="assets/javascript/javascript.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-
-<div class="jumbotron">
- <div class="container text-center">
-
-
-   <h1>Adventure Hound</h1>  
-   
-   <p>Tips for travelers</p>
-   <form>
-        <div class="input-group">
-    <span class="input-group-addon">
-        <i class="glyphicon glyphicon-search"></i>
-    </span>
-    <input type="text" id="placeName"  class="form-control" placeholder="Type your dream country..."/>
-</div>
-    </form>
- </div>
-</div>
-
-<div class="row">
-   <div class="col-sm-6">
-     <p class = 'countryName'>Flags</p>
-     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:60%" alt="Image">
-   </div>
-     
- 
- <div class="row">
-   <div class="col-sm-6">
-     <p class = 'countryName'>Pictures</p>
-     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:60%" alt="Image">
-   </div>
-
-<footer class="container-fluid text-center">
-<div class="container">
- <br>
- <button type="button" class="btn">Attraction</button>
- <button type="button" class="btn btn-default">Food</button>
- <button type="button" class="btn btn-primary">Translation</button>
- <button type="button" class="btn btn-success">Transportation</button>
- <button type="button" class="btn btn-info">Exchange</button>
- <button type="button" class="btn btn-warning">Sports Events</button>
- <button type="button" class="btn btn-danger">Local News</button>
-       
-</div>
- <p>Copyright ® 2017 Konjit Turock, Muneeb Khan, Nicholas Xanttopoulos, David Lee All rights reserved</span></p>
-</footer>
-
+  <br>
+  <div id="wrap">
+    <div id="main">
+      <div class="container text-center">
+        <h1 class="popularSearches">Adventure Hound</h1>
+        <p class="popularSearches">Tips for travelers</p>
+        <form>
+          <div class="input-group">
+            <span type ="submit" class="input-group-addon"><i  type="submit" class="glyphicon glyphicon-search pushBtn"></i></span>
+            <input type="text" id="placeName" class="form-control" placeholder="Type your dream place...">
+          </div>
+          <br>
+        </form>
+      </div>
+      <br>
+      <div class="container-fluid text-center">
+        <button type="button" id="weather" class="btn">Weather</button>
+        <button type="button" id="currency" class="btn btn-info">Currency Exchange</button>
+        <button type="button" id="restaurants" class="btn btn-default">Restaurants</button>
+        <button type="button" id="translate" class="btn btn-primary">Translation</button>
+        <button type="button" id="transport" class="btn btn-success">Transportation</button>
+        <button type="button" id="events" class="btn btn-warning">Events</button>
+        <button type="button" id="news" class="btn btn-danger">Local News</button>
+      </div>
+      <br><br>
+      <div class="row">
+        <div id="display_1" class="col-sm-4">
+          <h2 class = "popularSearches">Flag:</h2>
+          <img src="./assets/images/flags_of_the_world.gif" style="width:60%" alt="Image">
+        </div>
+        <div id="display_2" class="col-sm-4">
+         <h2 class = "popularSearches">Info:</h2>
+         <!-- <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:60%" alt="Image"> -->
+        </div>
+        <div class="col-sm-4">
+          <h2>Recent Searches:</h2>
+          <table class="table">
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <span class ="textFooter">Copyright ® 2017 Konjit Turock, Muneeb Khan, Nicholas Xanttopoulos, David Lee All rights reserved</span>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,58 @@
+html, body {
+  	background-image: url("http://bestanimations.com/Earth&Space/Earth/earthglobeanimation/globe-earth-animation-6.gif");
+  	background-size: 100%;
+  	background-repeat: no-repeat;
+  	max-height: 100%;
+  	max-width: 100%;
+  	font-weight:bold;
+  	color:black;
+} #wrap {
+	min-height:100%;
+} h2, h3 {
+	font-weight:bold;
+	text-decoration:underline;
+} .footer {
+    position: fixed;
+  	/*margin-top: -75px;*/
+    height:50px;
+    width:100%;
+	/*clear: both;*/
+	/*padding-top: 20px;*/
+	bottom: 0px;
+	left: 0px;
+	background-color: black;
+	text-align:center;
+} /*.jumbotron {
+    background-image: url('https://media.giphy.com/media/rhYbume18uUBW/giphy.gif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}*/ .table {
+	color: black;
+	font-weight:bold;
+} .popularSearches, #display_2, #display_1 {
+	text-shadow:75px -50px 3px rgba(0, 0, 0, 0.25);
+} .col-sm-4 {
+	text-align:center;
+	margin:auto;
+}.textFooter {
+	line-height:55px;
+	color:white;
+	font-weight:bold;
+} .displayRates {
+	vertical-align:center;
+	vertical-align:top;
+	float: left;
+	/*table-layout:fixed;*/
+	margin-right:25px;
+	text-shadow:100px -60px 3px rgba(0, 0, 0, 0.35);
+	font-size:16px;
+	/*width:100%;*/
+} #queries, .weather {
+	font-size:20px;
+} td {
+	vertical-align:top;
+    word-wrap:break-word;
+} .weather {
+	text-shadow:100px -65px 3px rgba(0, 0, 0, 0.35);
+	padding-bottom: 20px;
+}
